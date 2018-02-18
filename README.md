@@ -1,6 +1,6 @@
 # Hello world with Django 2
 
-## Versiones
+## Requirements
 ```
 Django==2.0.2
 Python 3.4.2
