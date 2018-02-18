@@ -1,4 +1,4 @@
-# Hello world with Django 2
+# Django 2 - CRUD Example 
 
 ## Requirements
 ```
