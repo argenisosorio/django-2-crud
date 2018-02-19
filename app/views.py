@@ -1,11 +1,8 @@
 # -*- coding: utf-8 -*-
-from django.shortcuts import render, render_to_response
-from django.http import HttpResponse
 from django.views.generic import ListView, TemplateView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.urls import reverse_lazy
 from app.models import Person
-from django.template import RequestContext
 
 
 class Index(TemplateView):
