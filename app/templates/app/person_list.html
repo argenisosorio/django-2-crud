@@ -1,0 +1,13 @@
+{% extends "app/base.html" %}
+{% block title %}List{% endblock %}
+{% block body %}
+<h1>List of Persons</h1>
+<ul>
+  {% for person in object_list %}
+  <li>{{ person.first_name }} {{ person.last_name }}
+    <a href="{% url 'update' person.id %}">Update</a>
+    <a href="{% url 'delete' person.id %}">Delete</a>
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}

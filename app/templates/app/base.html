@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{% block title %}Base{% endblock %}</title>
+</head>
+<body>
+  <a href="{% url 'create' %}">Create</a> |
+  <a href="{% url 'list' %}">List</a>
+  {% block body %}
+    Base
+  {% endblock %}
+  </body>
+</html>
+

@@ -1,0 +1,9 @@
+{% extends "app/base.html" %}
+{% block title %}Confirm delte person{% endblock %}
+{% block body %}
+<h1>Delete Person</h1>
+<form method="post">{% csrf_token %}
+  Are you sure you want to delete "{{ object }}" ?
+  <input type="submit" value="Submit" />
+</form>
+{% endblock %}
