@@ -3,6 +3,7 @@ from django.views.generic import ListView, TemplateView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.urls import reverse_lazy
 from app.models import Person
+from app.forms import PersonForm
 
 
 class Index(TemplateView):
@@ -15,13 +16,15 @@ class List(ListView):
 
 class Create(CreateView):
     model = Person
-    fields = ['first_name', 'last_name']
+    form_class = PersonForm
+    #fields = ['first_name', 'last_name']
     success_url = reverse_lazy('list')
 
 
 class Update(UpdateView):
     model = Person
-    fields = ['first_name', 'last_name']
+    form_class = PersonForm
+    #fields = ['first_name', 'last_name']
     success_url = reverse_lazy('list')
 
 
